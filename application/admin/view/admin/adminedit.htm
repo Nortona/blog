@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>森</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+    {include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container" >
+            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content" >
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs" >
+                    <ul class="breadcrumb">
+                        <li>
+                        <a href="#">用户</a>
+                        </li>
+                        <li>
+                        <a href="#">基本信息</a>
+                        </li>
+                        <li>
+                            <a href="#">修改信息</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div align="center">
+                <div class="col-lg-12 col-sm-12 col-xs-12"  >
+                    <div class="widget flat radius-bordered" >
+                        <div class="widget-header bg-blue">
+                            <span class="widget-caption">用户信息</span>
+                        </div>
+                        <div class="widget-body">
+                            <div id="user">
+                                <form role="form" action="" method="post">
+                                    <div class="form-group" style="width: 50%">
+                                        <h5 align="left">用户名</h5>
+                                            <span class="input-icon icon-right">
+
+                                                <input type="text" class="form-control" name="username" placeholder="用户名">
+                                                <i class="fa fa-user circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%">
+                                        <h5 align="left">姓名</h5>
+                                            <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="name" placeholder="姓名" >
+                                                <i class="glyphicon glyphicon-user circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%">
+                                        <h5 align="left">性别</h5>
+                                        <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="sex" placeholder="性别">
+                                                <i class="glyphicon glyphicon-adjust circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%">
+                                        <h5 align="left">年龄</h5>
+                                        <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="age" placeholder="年龄">
+                                                <i class="fa fa-lock circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%">
+                                    <h5 align="left">电话</h5>
+                                    <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="phone" placeholder="电话">
+                                                <i class="glyphicon glyphicon-earphone circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%">
+                                        <h5 align="left">邮箱</h5>
+                                            <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="email" placeholder="邮箱">
+                                                <i class="fa fa-envelope circular"></i>
+                                            </span>
+                                    </div>
+                                    <div class="form-group"  style="width: 50%" style="width: 50%">
+                                        <h5 align="left">地址</h5>
+                                            <span class="input-icon icon-right">
+                                                <input type="text" class="form-control" name="address" placeholder="地址">
+                                                <i class="glyphicon glyphicon-map-marker circular"></i>
+                                            </span>
+                                    </div>
+
+                                </div>
+                                <div style="text-align: right">
+                                    <button type="submit" class="btn btn-blue">提交</button>
+                                </div>
+                                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <!-- /Page Body -->
+        </div>
+            <!-- /Page Content -->
+    </div>
+
+	    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>会员用户管理中心</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+	{include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">文章</a>
+                    </li>
+                    <li class="active">文章管理</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="widget">
+                                <div class="widget-header ">
+                                    <span class="widget-caption">新增</span>
+                                    <div class="widget-buttons">
+                                        <a href="#" data-toggle="maximize">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                        <a href="#" data-toggle="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dispose">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="widget-body">
+                                    <table class="table table-striped table-hover table-bordered dataTable no-footer" id="editabledatatable" aria-describedby="editabledatatable_info" >
+                                        <thead>
+                                        <tr role="row" align="center">
+                                            <th  align="center" class="sorting_asc" tabindex="0" aria-controls="editabledatatable" rowspan="1" colspan="1" aria-label="
+                                                    id
+                                                : activate to sort column ascending" aria-sort="ascending" style="width: 5%;">
+                                                文章标题
+                                            </th>
+                                            <th align="center" class="sorting" tabindex="0" aria-controls="editabledatatable" rowspan="1" colspan="1" aria-label="
+                                                    ownerID
+                                                : activate to sort column ascending" style="width: 5%;">
+                                                文章内容
+                                            </th>
+                                            <th align="center" class="sorting" tabindex="0" aria-controls="editabledatatable" rowspan="1" colspan="1" aria-label="
+                                                    name
+                                                : activate to sort column ascending" style="width: 10%;">
+                                                文章标签
+                                            </th>
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {volist name='articleRes' id='artRes'}
+                                        <tr>
+                                            <td align="center">{$artRes.title}</td>
+                                            <td align="center">{$artRes.content}</td>
+                                            <td align="center">{$artRes.tag} </td>
+                                            <td align="center">
+                                                <a href="{:url('Shop/couponadd')}" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> 添加</a>
+                                            </td>
+                                        </tr>
+                                        {/volist}
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>
