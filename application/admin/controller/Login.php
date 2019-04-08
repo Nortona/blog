@@ -22,5 +22,13 @@ class Login extends Controller
         	return;
         }
         return view();
+	}
+	public function check($code='')
+    {
+        if (!captcha_check($code)) {
+            $this->error('验证码错误');
+        } else {
+            return true;
+        }
     }
 }

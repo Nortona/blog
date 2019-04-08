@@ -9,6 +9,6 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__ADMIN__'=>'/tp/public/static/admin'
+        '__ADMIN__' => 'http://127.0.0.1/bick/public/static/admin',
     ],
 ];
